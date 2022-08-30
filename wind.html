@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container content">    
+      <div class="row">
+        <div class="col-md-8">
+              <h3>Summary: Latitude vs. Wind Speed </h3>
+                <hr>
+          </div>
+          <div class="col-md-4">
+              <h3>Visualizations</h3>
+              <hr>
+          </div>   
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+              <div class="thumbnail">             
+                  <a href="Resources/assets/images/Fig4.png"><img class="img-thumbnail" src="Resources/assets/images/Fig4.png " width="100%" alt="temperature"></a>
+                  <CENTER><p>click to enlarge figure</p></CENTER>
+              </div>
+          </div>    
+
+          <div class="col-md-4">
+              <p> There does not seem to be a statistical correlation to wind speed and latitude during the time period measured.   </p> 
+          
+              <p> Across all location data gathered, there appears to be a tight clustering of data between 0 and 10 miles per hour. During this time period, no notable extreme weather activity like hurricanes were recorded.</p>
+                         
+          </div>       
+      
+          <div class="col-md-4">
+                  <div class="col-3 col-md-6">        
+                      <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature"></a>
+                      <CENTER><p>Temperature</p></CENTER> 
+                  </div>
+                  
+                  <div class="col-3 col-md-6">
+                      <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                      <CENTER><p>Humidity</p></CENTER>             
+                  </div>
+             
+                  <div class="col-3 col-md-6">
+                      <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                      <CENTER><p>Cloudiness</p></CENTER>
+                  </div>
+
+                  <div class="col-3 col-md-6">
+                      <a href="wind.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
+                      <CENTER><p>Wind Speed</p></CENTER>
+                  </div>
+              
+          
+          </div>
+      </div>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        <b>&copy; Copyright WebberDan 2022</b>
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
